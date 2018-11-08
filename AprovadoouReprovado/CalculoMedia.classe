@@ -1,0 +1,23 @@
+classe publica CalculoMedia{
+    real privado nota1, nota2, nota3, media;
+
+    metodo publico real pegarMedia(){
+        retorne este.media;
+    }
+
+    metodo publico vazio calcular(real n1, real n2, real n3){
+        este.nota1 = n1;
+        este.nota2 = n2;
+        este.nota3 = n3;
+
+        este.media = (este.nota1 + este.nota2 + este.nota3) / 3;
+    }
+
+    metodo publico texto resultado() {
+        se  (media >= 7) {
+            retorne "Aprovado!";
+        } senao {
+            retorne "Reprovado!";
+        }
+    }
+}

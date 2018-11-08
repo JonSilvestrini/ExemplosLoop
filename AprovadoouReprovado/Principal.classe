@@ -1,0 +1,21 @@
+classe publica Principal{
+    metodo publico Principal(){
+
+        escrevaln("Digite a primeira nota: ");
+        real nota1 = lerReal();
+
+        escrevaln("Digite a segunda nota: ");
+        real nota2 = lerReal();
+
+        escrevaln("Digite a terceira nota: ");
+        real nota3 = lerReal();
+
+        CalculoMedia media = novo CalculoMedia();
+
+        media.calcular(nota1,nota2,nota3);
+
+        escrevaln("Sua nota é: " + media.pegarMedia());
+        
+        escrevaln(media.resultado());
+    }
+}
